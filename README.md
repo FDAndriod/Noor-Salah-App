@@ -143,14 +143,14 @@ ISLAMIC_API_KEY="your_islamic_services_api_key_here"
 
 ## 📱 App Screenshots
 
-![Home Screen](salahhomepageimg1.jpg)
-![Quran Reader](salahquranpageimg2.jpg)
-![AI Assistant](salahaiassitentimg3.jpg)
-![AI Chat Details](salahassistentimg4.jpg)
-![All Features](salahallimg5.jpg)
-![Islamic Calendar](salahislamiccalendering6.jpg)
-![Holy Quran](salahholyguranimg7.jpg)
-![Arabic Font View](salaharabicfontimg8.jpg)
-![Juz-wise Quran](salahjuzwisequranimg9.jpg)
-![App Settings](salahsettingsimg10.jpg)
+![Home Screen](salahhomepageimg1.JPG)
+![Quran Reader](salahquranpageimg2.JPG)
+![AI Assistant](salahaiassitentimg3.JPG)
+![AI Chat Details](salahassistentimg4.JPG)
+![All Features](salahallimg5.JPG)
+![Islamic Calendar](salahislamiccalendering6.JPG)
+![Holy Quran](salahholyguranimg7.JPG)
+![Arabic Font View](salaharabicfontimg8.JPG)
+![Juz-wise Quran](salahjuzwisequranimg9.JPG)
+![App Settings](salahsettingsimg10.JPG)
 

@@ -145,20 +145,30 @@ ISLAMIC_API_KEY="your_islamic_services_api_key_here"
 
 <div align="center">
 
-| Home Screen | Quran Reader | AI Assistant | AI Chat Details |
-| :---: | :---: | :---: | :---: |
-| ![Home](screenshots/salahhomepageimg1.jpg) | ![Quran](screenshots/salahquranpageimg2.jpg) | ![AI Assistant](screenshots/salahaiassitentimg3.jpg) | ![AI Chat](screenshots/salahassistentimg4.jpg) |
-| *Dashboard & Widgets* | *Surah Browsing* | *AI Assistant UI* | *Smart Queries* |
+| Home Screen | Quran Reader |
+| :---: | :---: |
+| ![Home](screenshots/salahhomepageimg1.jpg) | ![Quran](screenshots/salahquranpageimg2.jpg) |
+| *Dashboard & Prayer Times* | *Surah Browsing & Reader* |
 
-| All Features | Islamic Calendar | Holy Quran | Arabic Font View |
-| :---: | :---: | :---: | :---: |
-| ![All Img](screenshots/salahallimg5.jpg) | ![Calendar](screenshots/salahislamiccalendering6.jpg) | ![Holy Quran](screenshots/salahholyguranimg7.jpg) | ![Arabic Font](screenshots/salaharabicfontimg8.jpg) |
-| *Overview* | *Hijri Dates* | *Reading View* | *Typography & Text* |
+| AI Assistant | AI Chat Details |
+| :---: | :---: |
+| ![AI Assistant](screenshots/salahaiassitentimg3.jpg) | ![AI Chat](screenshots/salahassistentimg4.jpg) |
+| *AI Chatbot UI* | *Smart Queries & History* |
+
+| All Features & Tools | Islamic Calendar |
+| :---: | :---: |
+| ![All Img](screenshots/salahallimg5.jpg) | ![Calendar](screenshots/salahislamiccalendering6.jpg) |
+| *App Overview* | *Hijri Dates & Events* |
+
+| Holy Quran View | Arabic Font Display |
+| :---: | :---: |
+| ![Holy Quran](screenshots/salahholyguranimg7.jpg) | ![Arabic Font](screenshots/salaharabicfontimg8.jpg) |
+| *Reading View* | *Custom Typography* |
 
 | Juz-wise Quran | App Settings |
 | :---: | :---: |
 | ![Juz](screenshots/salahjuzwisequranimg9.jpg) | ![Settings](screenshots/salahsettingsimg10.jpg) |
-| *Juz Index* | *Configurations* |
+| *Juz Index Navigation* | *Configurations & Preferences* |
 
 </div>
 

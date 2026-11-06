@@ -41,3 +41,105 @@ A modern, feature-rich native Android application designed to provide an all-in-
 ### 💎 Premium Upgrades & Updates
 - **In-App Purchases**: Seamless integration with **Google Play Billing Library** for premium features/ad-free upgrades.
 - **In-App Updates**: Flexible and immediate App Update API integration.
+
+
+
+## 🛠️ Detailed Tech Stack
+
+### 🎨 UI & Presentation Layer
+- **Jetpack Compose:** Modern declarative UI toolkit for building responsive, high-performance Android interfaces[cite: 7].
+- **Material Design 3:** Built using Material 3 design tokens, components, dynamic color palettes, and typography[cite: 7, 8].
+- **Material Icons Extended:** Extended set of vector icons for crisp visual navigation.
+- **Accompanist System UI Controller:** Dynamic status bar and navigation bar styling control.
+- **Lottie Animations:** Smooth vector animations (`lottie-compose`) for interactive feedback and splash screens[cite: 8, 9].
+- **Dots Indicator:** Custom page indicators for viewpagers, onboardings, and tabbed workflows.
+
+---
+
+### 🏗️ Architecture & Dependency Injection
+- **MVVM Architecture:** Clean separation of concerns with Model-View-ViewModel pattern for testability and maintainability[cite: 7, 8, 9].
+- **Dagger Hilt:** Standardized dependency injection framework simplifying scope management across Activities, ViewModels, and WorkManagers[cite: 7, 8, 9].
+
+---
+
+### 💾 Local Database & Storage
+- **Room Database:** Robust ORM providing local offline data persistence, backed by Kotlin Coroutines & `Flow` for reactive data streams[cite: 7, 8, 9].
+- **AndroidX Security Crypto:** Encrypted SharedPreferences and file handling for securing sensitive app data and API keys.
+
+---
+
+### 🌐 Networking & REST APIs
+- **Retrofit & OkHttp3:** Type-safe HTTP client with custom `HttpLoggingInterceptor` for REST API communication[cite: 7].
+- **Gson:** Efficient JSON serialization and deserialization for API responses.
+
+---
+
+### ⚡ Asynchronous Operations & State Management
+- **Kotlin Coroutines:** Asynchronous, non-blocking thread management[cite: 7, 8, 9].
+- **StateFlow & SharedFlow:** Reactive streams for state management and UI events[cite: 7, 9].
+
+---
+
+### 🎵 Media & Background Services
+- **AndroidX Media3 (ExoPlayer):** Modern audio player stack supporting high-performance background audio streaming and notification media sessions[cite: 9].
+- **WorkManager (Hilt Integrated):** Guaranteed background task execution and offline sync managed directly via Hilt dependency injection[cite: 7, 9].
+
+
+
+# 🗂️ Project Directory Structure
+
+```text
+com.example.noorsalahjetpackcompose/
+│
+├── data/
+│   ├── dao/                 # Room Database Data Access Objects (Ayah, Bookmark, Prayer, Surah, etc.)
+│   ├── dataclasses/         # UI States, API Response models, and Data classes
+│   ├── entities/            # Room Database Entities (Database Tables)
+│   ├── remote/              # Retrofit API Services (AlQuran, Aladhan, Prayer, Qibla, Weather, Tafsir)
+│   └── repository/          # Repositories abstracting data sources (Prayer, Quran, Dua, OpenRouter, etc.)
+│
+├── di/                      # Dagger Hilt Modules & Entry Points (DatabaseModule, etc.)
+│
+├── ui/
+│   └── components/
+│       ├── aichatcomp/      # AI Chat screen, history drawer, and ViewModel
+│       ├── bookmarkcomp/    # Bookmark management screens
+│       ├── calendarcomp/    # Hijri Calendar views and top sections
+│       ├── duascreencomp/   # Dua lists, tabs, and ViewModels
+│       ├── favscreencomp/   # Favorites screen and ViewModel
+│       ├── homescreencomp/  # Dashboard widgets, daily dua/verse, prayer sheets, and ViewModels
+│       └── hucomp/          # Hajj & Umrah step-by-step screens and tabs
+│
+├── IslamicCalenderApp.kt    # Custom Application class (Hilt annotated)
+└── MainActivity.kt          # Single-Activity entry point hosting Compose navigation
+
+
+## 📋 System Requirements & Environment
+
+### ⚙️ SDK & JVM Configuration
+- **Minimum SDK (`minSdk`):** 24 (Android 7.0 Nougat)
+- **Target SDK (`targetSdk`):** 36 (Android 16+)
+- **Compile SDK (`compileSdk`):** 36
+- **Language / JVM Target:** Kotlin / Java 21 *(with core library desugaring enabled)*
+
+---
+
+### 🛡️ Runtime Permissions
+- `ACCESS_FINE_LOCATION` / `ACCESS_COARSE_LOCATION` *(Precise GPS & Network location for prayer times & Qibla direction finder)*
+- `INTERNET` / `ACCESS_NETWORK_STATE` *(REST API data fetching, audio streaming, & AI Chat connectivity)*
+- `POST_NOTIFICATIONS` *(Athan alerts, daily Azkar, and event reminders)*
+- `FOREGROUND_SERVICE` / `WAKE_LOCK` *(Uninterrupted background audio playback via Media3 & scheduled WorkManager tasks)*
+
+---
+
+### 🔑 Environment Setup (`local.properties`)
+To run the application locally, ensure the following API keys are configured inside your `local.properties` file:
+
+```properties
+OPENROUTER_API_KEY="your_openrouter_api_key_here"
+ISLAMIC_API_KEY="your_islamic_services_api_key_here"
+
+
+
+## 📋 Screen Shots
+
